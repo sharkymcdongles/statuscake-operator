@@ -1,0 +1,24 @@
+# permissions for end users to edit uptimetests.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: uptimetest-editor-role
+rules:
+- apiGroups:
+  -.sre.mls.io
+  resources:
+  - uptimetests
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  -.sre.mls.io
+  resources:
+  - uptimetests/status
+  verbs:
+  - get

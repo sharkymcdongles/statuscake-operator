@@ -1,0 +1,6 @@
+apiVersion:.sre.mls.io/v1alpha1
+kind: UptimeTest
+metadata:
+  name: uptimetest-sample
+spec:
+  # TODO(user): Add fields here

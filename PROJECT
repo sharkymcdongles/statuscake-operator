@@ -1,0 +1,19 @@
+domain: sre.mls.io
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: statuscake-operator
+repo: https://github.com/sharkymcdongles/statuscake-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: sre.mls.io
+  group: sre
+  kind: UptimeTest
+  path: https://github.com/sharkymcdongles/statuscake-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"
