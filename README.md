@@ -1,5 +1,5 @@
 # statuscake-operator
-Kubernetes operator built using the operator-sdk to manage StatusCake resources. Track work on this ticket: CPB-39374
+Kubernetes operator built using the operator-sdk to manage StatusCake resources.
 
 ## Description
 // TODO(user): An in-depth paragraph about your project and overview of use
